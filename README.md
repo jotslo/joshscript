@@ -1,5 +1,7 @@
 # JoshScript
-A language that everyone can learn. Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
+A language that everyone can learn.
+
+Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 # Usage
 **JOSH** increases the value by 1
