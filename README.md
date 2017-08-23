@@ -20,3 +20,13 @@ The following example will output the letter 'A'
 ```
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
 ```
+# Instructions
+1. Edit association.bat and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  to the location of JoshScript.py
+
+2. Open notepad, write a program in JoshScript and hit 'Save As'
+
+3. Change the file type to 'All Files' and then nameyour program filename.jsh, filename being whatever name you would like to name your file
+
+4. When opening the notepad file, open the file with association.bat
+
+Your JoshScript code should now run successfully.
