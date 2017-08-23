@@ -14,3 +14,9 @@ A language that everyone can learn.
 
 **joSH** takes input and sets the value to the ascii repr. of the char
 
+# Example
+The following example will output the letter 'A'
+
+```
+JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
+```
