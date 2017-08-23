@@ -29,4 +29,4 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
 
 4. When opening the notepad file, open the file with association.bat
 
-Your JoshScript code should now run successfully.
+Your JoshScript code should now run successfully. (Note that you must have Python 3.6 installed for this to work)
