@@ -23,7 +23,7 @@ def interpret(code):
             elif i == "JOsh": print(end = chr(value))
             elif i == "joSH":
                 try:
-                    value = ord(input("> "))
+                    value = ord(input("\nIN> "))
                 except:
                     error("Input is not a valid character")
             else:
@@ -41,6 +41,6 @@ def runall():
     except:
         error("Unknown error :(")
 
-print(end = "JoshScript v1.00\n> ")
+print(end = "JoshScript v1.01\n> ")
 runall()
 print()
