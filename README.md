@@ -16,12 +16,16 @@ Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 **joSH** takes input and sets the value to the ascii repr. of the char
 
-# Example
-The following example will output the letter 'A'
-
+# Examples
 ```
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
 ```
+`> A`
+
+```
+JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJoshJOSHJOshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshJOshJOSHJOSHJOSHJOshjosHjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJOshjosHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJoshJoshjoshJOshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshJOshjoshjoshjoshjoshjoshjoshjoshjoshJOshjosHjosHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOsh
+```
+`> Hello, World!`
 # Instructions
 1. Edit association.bat and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  to the location of JoshScript.py
 
