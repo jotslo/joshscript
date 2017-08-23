@@ -25,7 +25,7 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
 
 2. Open notepad, write a program in JoshScript and hit 'Save As'
 
-3. Change the file type to 'All Files' and then nameyour program filename.jsh, filename being whatever name you would like to name your file
+3. Change the file type to 'All Files' and then name your program filename.jsh, filename being whatever name you would like to name your file
 
 4. When opening the notepad file, open the file with association.bat
 
