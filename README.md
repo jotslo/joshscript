@@ -16,6 +16,8 @@ Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 **joSH** takes input and sets the value to the ascii repr. of the char
 
+**jOsh** sets the value to 0
+
 # Examples
 ```
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
