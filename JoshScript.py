@@ -1,4 +1,3 @@
-
 # JoshScript Source *.jsh
 from sys import argv
 from re import findall
