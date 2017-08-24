@@ -1,3 +1,4 @@
+
 # JoshScript Source *.jsh
 from sys import argv
 from re import findall
@@ -22,6 +23,7 @@ def interpret(code):
             elif i == "josH": value = int(value / 2)
             elif i == "JOsh": print(end = chr(value))
             elif i == "jOsh": value = 0
+            elif i == "JOSh": value = **= 2
             elif i == "joSH":
                 try:
                     value = ord(input("\nIN> "))
