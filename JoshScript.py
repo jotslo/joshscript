@@ -43,6 +43,6 @@ def runall():
     except:
         error("Unknown error :(")
 
-print(end = "JoshScript v1.01\n> ")
+print(end = "JoshScript v1.02\n> ")
 runall()
 print()
