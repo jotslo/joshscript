@@ -1,6 +1,13 @@
 # JoshScript
 A language that everyone can learn.
 
+# What's New?
+JoshScript 1.1 is out and includes some new features including:
+- Notation
+- Organised Joshes
+- Tape Reel
+...and more!
+
 Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 # Usage
@@ -12,7 +19,7 @@ Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 **josH** divides the value by 2 and rounds down to the nearest integer
 
-**JOsh** outputs the current value
+**JOsh** outputs the ascii repr. of the current value
 
 **joSH** takes input and sets the value to the ascii repr. of the char
 
@@ -20,9 +27,24 @@ Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 **JOSh** squares the value
 
+**JosH** outputs the current value
+
+**JoSH** moves one to the right on the tape reel
+
+**joSh** moves one to the left on the tape reel
+
+**(** starts notation space
+
+**)** ends notation space
+
 # Examples
 ```
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
+```
+`> A`
+
+```
+JOSHJoshJoshJosh (hiya)JoshJoshJoshJOSHJOsh
 ```
 `> A`
 
