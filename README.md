@@ -1,6 +1,7 @@
 # JoshScript
 A language that everyone can learn.
 
+Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 # What's New?
 JoshScript 1.1 is out and includes some new features including:
 - Notation
@@ -8,8 +9,6 @@ JoshScript 1.1 is out and includes some new features including:
 - Tape Reel
 
 ...and more!
-
-Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 
 # Usage
 **JOSH** increases the value by 1
