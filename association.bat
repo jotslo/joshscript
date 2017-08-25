@@ -1,4 +1,4 @@
 @echo off
-title JoshScript v1.02
+title JoshScript v1.1
 py D:\Documents\Dev\JoshScript\source\JoshScript.py %*
 pause
