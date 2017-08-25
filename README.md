@@ -6,6 +6,7 @@ JoshScript 1.1 is out and includes some new features including:
 - Notation
 - Organised Joshes
 - Tape Reel
+
 ...and more!
 
 Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
