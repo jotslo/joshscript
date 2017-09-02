@@ -3,12 +3,7 @@ A language that everyone can learn.
 
 Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
 # What's New?
-JoshScript 1.1 is out and includes some new features including:
-- Notation
-- Organised Joshes
-- Tape Reel
-
-...and more!
+JoshScript 1.2 is out and includes the ability to loop! Examples and usage will be coming soon.
 
 # Usage
 **JOSH** increases the value by 1
