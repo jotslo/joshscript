@@ -1,67 +1,223 @@
-# JoshScript Source *.jsh
 from sys import argv
-from re import *
-values = [0]*64
-pointer = 0
-ignored = [" ", "\t", "\n", chr(13), ";", "(", ")"]
+from re import compile,findall
 
-def check(cd):
-    for i in findall("....?", cd):
-        if i.lower() != "josh":
-            return False
-    return True
+memory = [0]*256 #number of cells
+pointer = 0 #current cell
 
-def error(msg):
-    print("JoshScript Error // " + msg)
+ignored_chars = [
+    " ",
+    "\t",
+    "\n",
+    chr(13),
+    ";",
+    "(",
+    ")"
+]
 
-def removal(code):
-    for i in findall(compile(".*?\((.*?)\)"),code) + ignored:
-        code = code.replace(i, "")
-    return code
 
-def interpret(code):
-    code = removal(code)
-    if len(code) % 4 == 0 and check(code):
-        for i in findall("....?", code):
-            global values, pointer
-            if i == "JOSH": values[pointer] += [0, 1][values[pointer] < 256]
-            elif i == "josh": values[pointer] -= [0, 1][values[pointer] > 0]
-            elif i == "Josh": values[pointer] *= 2
-            elif i == "josH": values[pointer] = int(values[pointer] / 2)
-            elif i == "JOsh": print(end = chr(values[pointer]))
-            elif i == "jOsh": values[pointer] = 0
-            elif i == "JOSh": values[pointer] **= 2
-            elif i == "JosH": print(end = str(values[pointer]))
-            elif i == "JoSH": pointer = (pointer + 1) % 64
-            elif i == "joSh": pointer -= [1, -63][pointer < 1]
-            elif i == "joSH":
-                try:
-                    value = ord(input("\nIN> "))
-                except:
-                    error("Input is not a valid character")
+def interpret_code(code):
+    """ run word by word and interpret each accordingly"""
+
+    global memory, pointer
+
+    # boolean assignment tables
+    additive = [-255,1]
+    slider = []
+
+    valid_code = None
+
+    #prevent recursive calls from being checked
+    #they passed the first time no need to check again
+
+    if type(code) is not list:
+        valid_code = validate_code(code)
+    else:
+        valid_code = code
+    code_length = len(valid_code)
+
+    #to support loop handling
+    after_loop = []
+
+    if valid_code:
+        for index, josh in enumerate(valid_code):
+            current_value = memory[pointer]
+            if josh == "JOSH":
+                #if current_value is less than max possible int add 1 or wrap around to 0
+                memory[pointer] += additive[current_value < 255]
+            elif josh == "josh":
+                #if current_value is less than max possible int subtract 1 or wrap around to 255
+                memory[pointer] -= additive[current_value > 0]
+            elif josh == "Josh":
+                #multiply by 2 or wrap around by knocking off the ninth or (256) place
+
+                #   0b111111110 -> 510
+                #               &
+                #   0b011111111 -> 255
+                #   0b011111110 -> 254
+
+                memory[pointer] = (current_value * 2) & 255
+            elif josh == "josH":
+                #shift all bits left
+                #no wrapping needed, ending digit is dropped
+
+                memory[pointer] >>= 1
+            elif josh == "JOsh":
+                #print the character associated with
+                #the value in the current memory cell
+
+                print(end = chr(memory[pointer]) )
+            elif josh == "jOsh":
+                #clear current memory cell
+                memory[pointer] = 0
+            elif josh == "JOSh":
+                #raise current cell value by the power of 2
+                #grab first 8 bits: Goto line 39 for reference
+
+                memory[pointer] = (current_value ** 2) & 255
+            elif josh == "JosH":
+                #print the number associated with
+                #the value in the current memory cell
+
+                print(end = str(current_value))
+            elif josh == "joSH":
+                #increment pointer position within memory limits
+                #grab first 8 bits: Goto line 40 for reference
+
+                pointer = (pointer + 1) & 255
+            elif josh == "joSh":
+                #decrement pointer position within memory limits
+                #grab first 8 bits: Goto line 40 for reference
+
+                pointer = (pointer - 1) & 255
+            elif josh == "JoSh":
+                #beginning of a loop, determine the contents of the loop and execute until
+                #current cell's value is 0
+
+                #grab code from the beginning of the loop indicator to the end of list
+                later_code = valid_code[index:]
+
+                #with the sliced list count each encloser and return the corresponding one.
+                contents = find_loop(later_code)
+
+                #grab from just in front of the first indicator
+                #all the way to just before the end loop indicator
+                after_loop = valid_code[ (index + len(contents) + 2): ]
+
+                #execute the contents until pointer is on an element with a value of 0
+                while memory[pointer] > 0:
+                    interpret_code(contents)
+                break
+            elif josh == "jOsH":
+                #this is the end loop case
+                pass
             else:
-                error("Not a valid josh")
+                error("{} // Not valid .jsh code".format(josh))
+        if after_loop:
+            interpret_code(after_loop)
     else:
         error("Code is not 100% josh, ensure there is no unintended spacing.")
 
-def openfile(filename):
-    data = open(filename, "r").read()
-    interpret(data)
 
-def runall():
+def find_loop(code):
+    """ from a given list return the appropiate instructions within the loop
+        count each enclosure until the matching enclosure is found.
+        A loop to prevent nested loops interfering with the end enclosure
+    """
+
+    index = 0
+    counter = 0
+    while True:
+        find = code[counter]
+        if find == "JoSh":
+            index+=1
+        elif find == "jOsH":
+            index-=1
+        if index == 0:
+            return code[1:counter]
+        counter+=1
+
+
+def remove_ignored(code):
+    """remove comments and ignored characters from the inputted code"""
+
+    regex = compile(".*?\((.*?)\)")
+    comments = findall(regex,code)
+
+    for findings in comments + ignored_chars:
+        code = code.replace(findings, "")   #remove each findings
+    return code
+
+
+def validate_code(code):
+    """ checks if code meets .jsh standards
+        this is done by removing any comments or ignored characters
+        checking if the left source is divisible by 4 using bit operations
+        then manually checking if each word is a valid josh command
+
+        if all these checks are met it will return a list of each command
+    """
+
+    #remove any ignored characters for interpretation
+    code = remove_ignored(code)
+
+    dis_by_4 = len(code) & 3
+
+    # 00001000 -> 8
+    #          &
+    # 00000100 -> 3
+    # 00000000 -> 0
+
+    if dis_by_4 != 0:
+        return False
+
+    josh_list = findall("....?",code)
+
+    #search through each 4 letter "word" to check if it valid .jsh code
+    for josh in josh_list:
+        if josh.lower() != "josh":
+            return False
+    return josh_list
+
+
+def error(message):
+    """custom error handler"""
+
+    print("JoshScript Error // " + message)
+
+
+def openfile(filename):
+    """open then given file and run in the .jsh interpreter"""
+
+    data = open(filename, "r")  #open in read only
+    data = data.read()          #read the contents
+
+    interpret_code(data)
+
+
+def run_program():
+    """ if there are no arguments passed initially then interpret
+        compatible .jsh source code through the python interpreter
+        otherwise try the first argument. if this is a file interpret
+        it otherwise throw the given arguments
+    """
+
     global values, pointer
-    try:
-        openfile(argv[1])
-    except:
+
+    if len(argv) == 1:
         try:
-            print("Something went wrong, loading interpreter...")
             while True:
+                memory = [0]*256
                 pointer = 0
-                values = [0]*64
-                interpret(input("\n> "))
+
+                interpret_code(input("\n>>> "))
+        except:
+            error("Unknown Error :(")
+    else:
+        try:
+            current_file = argv[1]
+            openfile(current_file)
         except:
             error("Unknown Error :(")
 
-print(end = "JoshScript 1.1\n> ")
-runall()
-print()
+print(end = "JoshScript 1.2\n> ")
+run_program()
