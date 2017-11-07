@@ -1,8 +1,8 @@
 # JoshScript
 A language that everyone can learn.
 
-Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
-Direct Download: http://www.joshcoding.com/downloads/joshscript.zip
+- Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
+- Direct Download: http://www.joshcoding.com/downloads/joshscript.zip
 
 A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
 
