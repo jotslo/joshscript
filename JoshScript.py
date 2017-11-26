@@ -9,9 +9,7 @@ ignored_chars = [
     "\t",
     "\n",
     chr(13),
-    ";",
-    "(",
-    ")"
+    ";"
 ]
 
 
@@ -140,7 +138,7 @@ def find_loop(code):
 def remove_ignored(code):
     """remove comments and ignored characters from the inputted code"""
 
-    regex = compile(".*?\((.*?)\)")
+    regex = compile("\([^\)]*\)")
     comments = findall(regex,code)
 
     for findings in comments + ignored_chars:
@@ -160,7 +158,7 @@ def validate_code(code):
     #remove any ignored characters for interpretation
     code = remove_ignored(code)
 
-    dis_by_4 = len(code) & 3
+    dis_by_4 = len(code) % 4
 
     # 00001000 -> 8
     #          &
