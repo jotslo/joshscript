@@ -79,6 +79,17 @@ def interpret_code(code):
                 #the value in the current memory cell
 
                 print(end = str(current_value))
+            elif josh == "JoSH":
+                #read number from standard input stream
+                #and store in the current cell
+
+                new_value = int(input())
+
+                if new_value < 0 or new_value >= 255:
+                    error("Number must be in range of [0; 255)")
+                    break
+
+                memory[pointer] = new_value
             elif josh == "joSH":
                 #increment pointer position within memory limits
                 #grab first 8 bits: Goto line 40 for reference

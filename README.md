@@ -20,7 +20,7 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 
 **JOsh** outputs the ascii repr. of the current value
 
-**joSH** takes input and sets the value to the ascii repr. of the char
+**JoSH** takes input and sets the value
 
 **jOsh** sets the value to 0
 
@@ -28,9 +28,13 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 
 **JosH** outputs the current value
 
-**JoSH** moves one to the right on the tape reel
+**joSH** moves one to the right on the tape reel
 
 **joSh** moves one to the left on the tape reel
+
+**JoSh** starts loop if the value is not 0, otherwise jump to matching jOsH tag
+
+**jOsH** ends loop
 
 **(** starts notation space
 
