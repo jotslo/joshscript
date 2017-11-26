@@ -20,6 +20,8 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 
 **JOsh** outputs the ascii repr. of the current value
 
+**JoSH** takes input and sets the value
+
 **jOsh** sets the value to 0
 
 **JOSh** squares the value
