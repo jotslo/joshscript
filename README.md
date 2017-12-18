@@ -1,44 +1,47 @@
 # JoshScript
-A language that everyone can learn.
+A simple language that anyone can learn.
 
-- Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
-- Direct Download: http://www.joshcoding.com/downloads/joshscript.zip
+- Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
+- Download from website: http://www.joshcoding.com/downloads/joshscript.zip
+- Download latest version: https://github.com/JoshSCF/JoshScript/archive/master.zip
 
-A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
+A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code,  
+so I could publish it as version 1.2. He also released the language-josh package for the atom text editor!  
+This allows you to get your syntax highlighted when writing code in JoshScript.
 
-# What's New?
+# What's new?
 JoshScript 1.2 is out and includes the ability to loop! Examples and usage will be coming soon.
 
 # Usage
-**JOSH** increases the value by 1
+`JOSH` increases the value by 1
 
-**josh** decreases the value by 1
+`josh` decreases the value by 1
 
-**Josh** multiplies the value by 2
+`Josh` multiplies the value by 2
 
-**josH** divides the value by 2 and rounds down to the nearest integer
+`josH` divides the value by 2, rounding down to the nearest integer
 
-**JOsh** outputs the ascii repr. of the current value
+`JOsh` outputs the character for the current value - ascii/Basic Latin symbols
 
-**JoSH** takes input and sets the value
+`JoSH` takes input and sets the value
 
-**jOsh** sets the value to 0
+`jOsh` resets the value to 0
 
-**JOSh** squares the value
+`JOSh` squares the value
 
-**JosH** outputs the current value
+`JosH` outputs the current value
 
-**joSH** moves one to the right on the tape reel
+`joSH` moves one to the right on the tape reel
 
-**joSh** moves one to the left on the tape reel
+`joSh` moves one to the left on the tape reel
 
-**JoSh** starts loop if the value is not 0, otherwise jump to matching jOsH tag
+`JoSh` starts loop if the value is not 0, otherwise jump to matching end loop tag
 
-**jOsH** ends loop
+`jOsH` ends the current loop
 
-**(** starts notation space
+`(` starts notation space
 
-**)** ends notation space
+`)` ends notation space
 
 # Examples
 ```
@@ -61,12 +64,14 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 ```
 `> Hello, World!`
 # Instructions
-1. Edit association.bat and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  to the location of JoshScript.py
+1. Edit _association.bat_ and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  
+to the location of your "JoshScript.py".
 
-2. Open notepad, write a program in JoshScript and hit 'Save As'
+2. Open a text editor, write a program in JoshScript and hit "Save As".
 
-3. Change the file type to 'All Files' and then name your program filename.jsh, filename being whatever name you would like to name your file
+3. Change the file type to "All Files" and then name your program  
+anything you would like that ends in _.jsh_, for example "my_program.jsh".
 
-4. When opening the notepad file, open the file with association.bat
+4. To run your program, open the text file with _association.bat_.
 
-Your JoshScript code should now run successfully. (Note that you must have Python 3.6 installed for this to work)
+Your JoshScript code should now run successfully. (Note: you need to have Python 3.6 installed for this to work)
