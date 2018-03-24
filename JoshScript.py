@@ -84,7 +84,7 @@ def interpret_code(code):
                 new_value = int(input())
 
                 if new_value < 0 or new_value >= 255:
-                    error("Number must be in range of [0; 255)")
+                    error("Number must be in range of [0, 255]")
                     break
 
                 memory[pointer] = new_value
@@ -119,6 +119,13 @@ def interpret_code(code):
             elif josh == "jOsH":
                 #this is the end loop case
                 pass
+            elif josh == "JOsH":
+                #this reads actual chars from input rather than ints
+                new_value = ord(input())
+                if 0 < new_value < 255:
+                    memory[pointer] = new_value
+                else:
+                    error("Character's ASCII value must be in range of [0, 255]")
             else:
                 error("{} // Not valid .jsh code".format(josh))
         if after_loop:
