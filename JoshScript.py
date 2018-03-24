@@ -3,6 +3,7 @@ from re import compile,findall
 
 memory = [0]*256 #number of cells
 pointer = 0 #current cell
+rem_input = "" #remaining input
 
 ignored_chars = [
     " ",
@@ -16,7 +17,7 @@ ignored_chars = [
 def interpret_code(code):
     """ run word by word and interpret each accordingly"""
 
-    global memory, pointer
+    global memory, pointer, rem_input
 
     # boolean assignment tables
     additive = [-255,1]
@@ -121,11 +122,23 @@ def interpret_code(code):
                 pass
             elif josh == "JOsH":
                 #this reads actual chars from input rather than ints
-                new_value = ord(input())
-                if 0 < new_value < 255:
-                    memory[pointer] = new_value
+                if rem_input:
+                    #takes remaining inputted value
+                    if 0 < new_value < 255:
+                        memory[pointer] = rem_input[0]
+                        rem_input = rem_input[1:]
+                    else:
+                        error("Character's ASCII value must be in range of [0, 255]")
                 else:
-                    error("Character's ASCII value must be in range of [0, 255]")
+                    val = input()
+                    new_value = val if len(val) == 1 else val[0]
+                    if len(val) > 1:
+                        rem_input = val[1:]
+                    #takes first inputted value
+                    if 0 < new_value < 255:
+                        memory[pointer] = new_value
+                    else:
+                        error("Character's ASCII value must be in range of [0, 255]")
             else:
                 error("{} // Not valid .jsh code".format(josh))
         if after_loop:
