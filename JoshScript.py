@@ -127,6 +127,8 @@ def interpret_code(code):
                     new_value = ord(rem_input) if len(rem_input) == 1 else ord(rem_input[0])
                     if len(rem_input) > 1:
                         rem_input = rem_input[1:]
+                    else:
+                        rem_input = ""
                     if 0 < new_value < 255:
                         memory[pointer] = new_value
                     else:
