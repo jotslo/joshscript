@@ -7,7 +7,7 @@ A language that everyone can learn.
 A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's New?
-JoshScript 1.2.1 has been released and features a new function.
+JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.
 
 # Usage
 **JOSH** increases the value by 1
