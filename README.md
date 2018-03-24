@@ -7,7 +7,7 @@ A language that everyone can learn.
 A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's New?
-JoshScript 1.2 is out and includes the ability to loop! Examples and usage will be coming soon.
+JoshScript 1.2.1 has been released and features a new function.
 
 # Usage
 **JOSH** increases the value by 1
@@ -20,7 +20,7 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 
 **JOsh** outputs the ascii repr. of the current value
 
-**JoSH** takes input and sets the value
+**JoSH** takes integers as input and sets the value to that
 
 **jOsh** sets the value to 0
 
@@ -35,6 +35,8 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 **JoSh** starts loop if the value is not 0, otherwise jump to matching jOsH tag
 
 **jOsH** ends loop
+
+**JOsH** takes characters as input and sets the value to ascii repr. of char
 
 **(** starts notation space
 
