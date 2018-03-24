@@ -22,6 +22,8 @@ JoshScript 1.2.1 has been released and features a new function.
 
 **JoSH** takes integers as input and sets the value to that
 
+**JOsH** takes characters as input and sets the value to ascii repr. of char
+
 **jOsh** sets the value to 0
 
 **JOSh** squares the value
@@ -35,8 +37,6 @@ JoshScript 1.2.1 has been released and features a new function.
 **JoSh** starts loop if the value is not 0, otherwise jump to matching jOsH tag
 
 **jOsH** ends loop
-
-**JOsH** takes characters as input and sets the value to ascii repr. of char
 
 **(** starts notation space
 
