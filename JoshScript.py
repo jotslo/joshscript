@@ -124,6 +124,9 @@ def interpret_code(code):
                 #this reads actual chars from input rather than ints
                 if rem_input:
                     #takes remaining inputted value
+                    new_value = ord(rem_input) if len(rem_input) == 1 else ord(rem_input[0])
+                    if rem_input > 1:
+                        rem_input = rem_input[1:]
                     if 0 < new_value < 255:
                         memory[pointer] = rem_input[0]
                         rem_input = rem_input[1:]
@@ -131,7 +134,7 @@ def interpret_code(code):
                         error("Character's ASCII value must be in range of [0, 255]")
                 else:
                     val = input()
-                    new_value = val if len(val) == 1 else val[0]
+                    new_value = ord(val) if len(val) == 1 else ord(val[0])
                     if len(val) > 1:
                         rem_input = val[1:]
                     #takes first inputted value
