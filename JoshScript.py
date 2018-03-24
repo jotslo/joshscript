@@ -125,11 +125,10 @@ def interpret_code(code):
                 if rem_input:
                     #takes remaining inputted value
                     new_value = ord(rem_input) if len(rem_input) == 1 else ord(rem_input[0])
-                    if rem_input > 1:
+                    if len(rem_input) > 1:
                         rem_input = rem_input[1:]
                     if 0 < new_value < 255:
-                        memory[pointer] = rem_input[0]
-                        rem_input = rem_input[1:]
+                        memory[pointer] = new_value
                     else:
                         error("Character's ASCII value must be in range of [0, 255]")
                 else:
