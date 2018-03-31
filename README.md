@@ -5,12 +5,12 @@ A simple language that anyone can learn.
 - Direct Download: http://www.joshl.io/downloads/joshscript.zip
 - Download from here: https://github.com/JoshSCF/JoshScript/archive/master.zip
 
-A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code,  
-so I could publish it as version 1.2. He also released the language-josh package for the atom text editor!  
+A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
+for me to publish as version 1.2. He also released the language-josh package on the atom text editor!  
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's new?
-JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.
+JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
 # Usage
@@ -22,11 +22,11 @@ JoshScript 1.2 included a new ability to loop! Examples and usage will be coming
 
 `josH` divides the value by 2, rounding down to the nearest integer
 
-`JOsh` outputs the character for the current value - ascii/Basic Latin symbols
+`JOsh` outputs the ascii symbol with Unicode number equal to current value
 
 `JoSH` takes integers as input and sets the value to that
 
-`JOsH` takes characters as input and sets the value to ascii repr. of char
+`JOsH` takes characters as input and sets the value to ascii number of char
 
 `jOsh` resets the value to 0
 
@@ -40,7 +40,7 @@ JoshScript 1.2 included a new ability to loop! Examples and usage will be coming
 
 `JoSh` starts loop if the value is not 0, otherwise jump to matching end loop tag
 
-`jOsH` ends the current loop
+`jOsH` ends a loop
 
 `(` starts notation space
 
