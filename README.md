@@ -2,15 +2,16 @@
 A simple language that anyone can learn.
 
 - Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
-- Download from website: http://www.joshcoding.com/downloads/joshscript.zip
-- Download latest version: https://github.com/JoshSCF/JoshScript/archive/master.zip
+- Direct Download: http://www.joshl.io/downloads/joshscript.zip
+- Download from here: https://github.com/JoshSCF/JoshScript/archive/master.zip
 
 A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code,  
 so I could publish it as version 1.2. He also released the language-josh package for the atom text editor!  
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's new?
-JoshScript 1.2 is out and includes the ability to loop! Examples and usage will be coming soon.
+JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.
+JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
 # Usage
 `JOSH` increases the value by 1
@@ -23,7 +24,9 @@ JoshScript 1.2 is out and includes the ability to loop! Examples and usage will 
 
 `JOsh` outputs the character for the current value - ascii/Basic Latin symbols
 
-`JoSH` takes input and sets the value
+`JoSH` takes integers as input and sets the value to that
+
+`JOsH` takes characters as input and sets the value to ascii repr. of char
 
 `jOsh` resets the value to 0
 

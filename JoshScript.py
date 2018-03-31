@@ -3,6 +3,7 @@ from re import compile,findall
 
 memory = [0]*256 #number of cells
 pointer = 0 #current cell
+rem_input = "" #remaining input
 
 ignored_chars = [
     " ",
@@ -16,7 +17,7 @@ ignored_chars = [
 def interpret_code(code):
     """ run word by word and interpret each accordingly"""
 
-    global memory, pointer
+    global memory, pointer, rem_input
 
     # boolean assignment tables
     additive = [-255,1]
@@ -84,7 +85,7 @@ def interpret_code(code):
                 new_value = int(input())
 
                 if new_value < 0 or new_value >= 255:
-                    error("Number must be in range of [0; 255)")
+                    error("Number must be in range of [0, 255]")
                     break
 
                 memory[pointer] = new_value
@@ -119,6 +120,29 @@ def interpret_code(code):
             elif josh == "jOsH":
                 #this is the end loop case
                 pass
+            elif josh == "JOsH":
+                #this reads actual chars from input rather than ints
+                if rem_input:
+                    #takes remaining inputted value
+                    new_value = ord(rem_input) if len(rem_input) == 1 else ord(rem_input[0])
+                    if len(rem_input) > 1:
+                        rem_input = rem_input[1:]
+                    else:
+                        rem_input = ""
+                    if 0 < new_value < 255:
+                        memory[pointer] = new_value
+                    else:
+                        error("Character's ASCII value must be in range of [0, 255]")
+                else:
+                    val = input()
+                    new_value = ord(val) if len(val) == 1 else ord(val[0])
+                    if len(val) > 1:
+                        rem_input = val[1:]
+                    #takes first inputted value
+                    if 0 < new_value < 255:
+                        memory[pointer] = new_value
+                    else:
+                        error("Character's ASCII value must be in range of [0, 255]")
             else:
                 error("{} // Not valid .jsh code".format(josh))
         if after_loop:
@@ -228,5 +252,5 @@ def run_program():
         except:
             error("Unknown Error :(")
 
-print(end = "JoshScript 1.2\n> ")
+print(end = "JoshScript 1.2.2\n> ")
 run_program()
