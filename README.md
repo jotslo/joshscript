@@ -1,52 +1,54 @@
-# JoshScript
-A simple language that anyone can learn.
+# E-Script
+A simple language that anyone can learn.  
+ \- based on the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript).
 
 - Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
-- Direct Download: http://www.joshl.io/downloads/joshscript.zip
-- Download from here: https://github.com/JoshSCF/JoshScript/archive/master.zip
+- Download: https://github.com/user-e/E-Script/archive/master-version.zip
 
-A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
-for me to publish as version 1.2. He also released the language-josh package on the atom text editor!  
+A huge thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
+which was published as version 1.2. He also released the language-josh package on the atom text editor!  
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
-# What's new?
+## What's new?
 JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
-# Usage
-`JOSH` increases the value by 1
+## Operations (usage)
+ \- uses 2-3 characters from ascii/basic latin.
 
-`josh` decreases the value by 1
+`e+` _"JOSH"_ increases the value by 1
 
-`Josh` multiplies the value by 2
+`e-` _"josh"_ decreases the value by 1
 
-`josH` divides the value by 2, rounding down to the nearest integer
+`e2x` _"Josh"_ multiplies the value by 2
 
-`JOsh` outputs the ascii symbol with Unicode number equal to current value
+`e2d` _"josH"_ divides the value by 2, rounding down to the nearest integer
 
-`JoSH` takes integers as input and sets the value to that
+`ep` _"JOsh"_ outputs the ascii symbol with Unicode number equal to current value
 
-`JOsH` takes characters as input and sets the value to ascii number of char
+`e=` _"JoSH"_ takes integers as input and sets the value to that
 
-`jOsh` resets the value to 0
+`ec=` _"JOsH"_ takes characters as input and sets the value to ascii number of char
 
-`JOSh` squares the value
+`e0` _"jOsh"_ resets the value to 0
 
-`JosH` outputs the current value
+`exx` _"JOSh"_ squares the value
 
-`joSH` moves one to the right on the tape reel
+`ep=` _"JosH"_ outputs the current value (print/echo)
 
-`joSh` moves one to the left on the tape reel
+`et+` _"joSH"_ moves one to the right on the tape reel of values
 
-`JoSh` starts loop if the value is not 0, otherwise jump to matching end loop tag
+`et-` _"joSh"_ moves one to the left on the tape reel of values
 
-`jOsH` ends a loop
+`el` _"JoSh"_ starts loop if the value is not 0, else jump to matching end loop tag
+
+`eL` _"jOsH"_ ends a loop
 
 `(` starts notation space
 
 `)` ends notation space
 
-# Examples
+## Examples
 ```
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOsh
 ```
@@ -66,15 +68,17 @@ JOSHJOSHJOSHJoshJoshJoshJoshJOshJOSHJOshJOSHJOshJOSHJOshJOSHJOshJOSHJOshJOSHJOsh
 JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJoshJOSHJOshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshJOshJOSHJOSHJOSHJOshjosHjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJOshjosHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshjoshjoshjoshjoshJoshJoshjoshJOshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshJOSHJOSHJOSHJOshjoshjoshjoshjoshjoshjoshJOshjoshjoshjoshjoshjoshjoshjoshjoshJOshjosHjosHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOsh
 ```
 `> Hello, World!`
-# Instructions
+## Instructions
 1. Edit _association.bat_ and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  
-to the location of your "JoshScript.py".
+to the file path where your "E-Script.py" file is saved _(named JoshScript.py previously)_.
 
-2. Open a text editor, write a program in JoshScript and hit "Save As".
+2. Open a text editor, write a program using operations above and hit "Save As".
 
 3. Change the file type to "All Files" and then name your program  
 anything you would like that ends in _.jsh_, for example "my_program.jsh".
 
 4. To run your program, open the text file with _association.bat_.
+ \- find it using your file manager's "choose another app"/"browse" option.
 
-Your JoshScript code should now run successfully. (Note: you need to have Python 3.6 installed for this to work)
+Your E-Script code should now run successfully.  
+(Note: you need Python 3.6 installed for this to work)
