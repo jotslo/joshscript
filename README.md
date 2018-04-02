@@ -70,15 +70,15 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 `> Hello, World!`
 ## Instructions
 1. Edit _association.bat_ and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  
-to the file path where your "E-Script.py" file is saved _(named JoshScript.py previously)_.
+to the file path of your downloaded "E-Script.py" file _(named JoshScript.py previously)_.
 
-2. Open a text editor, write a program using operations above and hit "Save As".
+2. Open a text editor, write a program using operations above, then click "Save As".
 
-3. Change the file type to "All Files" and then name your program  
-anything you would like that ends in _.jsh_, for example "my_program.jsh".
+3. Change the file type to "All Files" and name your program anything  
+you would like that ends in _.jsh_, for example "my_program.jsh".
 
-4. To run your program, open the text file with _association.bat_.
- \- find it using your file manager's "choose another app"/"browse" option.
+4. To run your program, open the text file with _association.bat_.  
+ (find it using your file manager's "choose another app" or "browse" option)
 
 Your E-Script code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
