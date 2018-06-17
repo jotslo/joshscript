@@ -7,7 +7,7 @@ A language that everyone can learn.
 A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's New?
-JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.
+JoshScript 1.2.3 has been released and contains a new josh, `jOSh` which cubes the value.
 
 # Usage
 **JOSH** increases the value by 1
@@ -27,6 +27,8 @@ JoshScript 1.2.2 has been released and contains a few bug fixes and updated func
 **jOsh** sets the value to 0
 
 **JOSh** squares the value
+
+**jOSh** cubes the value
 
 **JosH** outputs the current value
 
