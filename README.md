@@ -10,7 +10,9 @@ for me to publish as version 1.2. He also released the language-josh package on 
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's new?
-JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.  
+JoshScript 1.2.3 has been released and contains a new josh, `jOSh` which cubes the value.
+
+JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
 # Usage
@@ -31,6 +33,8 @@ JoshScript 1.2 included a new ability to loop! Examples and usage will be coming
 `jOsh` resets the value to 0
 
 `JOSh` squares the value
+
+`jOSh` cubes the value
 
 `JosH` outputs the current value
 
