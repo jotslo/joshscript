@@ -14,7 +14,7 @@ JoshScript 1.2.2 has been released and contains a few bug fixes and updated func
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
 ## Operations (usage)
- \- uses 2-3 characters from ascii/basic latin.
+ \- uses 4 characters, each from a group of 2-8 ascii (basic latin) characters.
 
 `e+` _"JOSH"_ increases the value by 1
 
