@@ -12,6 +12,7 @@ This allows you to get your syntax highlighted when writing code in JoshScript.
 # What's new?
 JoshScript 1.2.3 has been released and contains a new josh, `jOSh` which cubes the value.
 
+**Release history - new in older versions:**  
 JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
