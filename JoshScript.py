@@ -73,6 +73,10 @@ def interpret_code(code):
                 #grab first 8 bits: Goto line 39 for reference
 
                 memory[pointer] = (current_value ** 2) & 255
+            elif josh == "jOSh":
+                #same as JOSh but its cubed
+                
+                memory[pointer] = (current_value ** 3) & 255
             elif josh == "JosH":
                 #print the number associated with
                 #the value in the current memory cell
@@ -252,5 +256,5 @@ def run_program():
         except:
             error("Unknown Error :(")
 
-print(end = "JoshScript 1.2.2\n> ")
+print(end = "JoshScript 1.2.3\n> ")
 run_program()
