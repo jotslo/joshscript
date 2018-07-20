@@ -1,6 +1,7 @@
 # E-Script
 A simple language that anyone can learn.  
- \- based on the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript).
+ \- with operations like low-level computer programming  
+ and based on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript).
 
 - Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
 - Download: https://github.com/user-e/E-Script/archive/master-version.zip
@@ -16,8 +17,8 @@ JoshScript 1.2.3 has been released and contains a new josh, `jOSh` which cubes t
 JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
-## Operations (usage)
- \- uses 4 characters, each from a group of 2-8 ascii (basic latin) characters.
+## Operations for usage ("codes")
+ \- uses 4 characters, each from a group of 2-8 ascii (basic latin) characters.  
 `eoo1` _"JOSH"_ increases the value by 1
 
 `eo-1` _"josh"_ decreases the value by 1
