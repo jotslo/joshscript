@@ -85,5 +85,3 @@ you would like that ends in _.jsh_, for example "program1.jsh".
 
 Your JoshScript code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
-
-//Note: I should now check preview, add commit title and description from notes, remove this line, then save changes.
