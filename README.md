@@ -1,5 +1,5 @@
 # E-Script
-A simple language that anyone can learn.
+A simple language that anyone can learn.  
  \- with operations like low-level computer programming  
  and based on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript).
 
@@ -19,35 +19,35 @@ JoshScript 1.2 included a new ability to loop! Examples and usage will be coming
 
 ## Operations for usage ("codes")
  \- uses 4 characters, each from a group of 2-8 ascii (basic latin) characters.  
-`eoo1`/"JOSH" increases the value by 1
+`eoo1` / "JOSH" increases the value by 1
 
-`eo-1`/"josh" decreases the value by 1
+`eo-1` / "josh" decreases the value by 1
 
-`eox2`/"Josh" multiplies the value by 2
+`eox2` / "Josh" multiplies the value by 2
 
-`eod2`/"josH" divides the value by 2, rounding down to the nearest integer
+`eod2` / "josH" divides the value by 2, rounding down to the nearest integer
 
-`eopc`/"JOsh" outputs the ascii symbol with Unicode number equal to current value
+`eopc` / "JOsh" outputs the ascii symbol with Unicode number equal to current value
 
-`eooi`/"JoSH" takes integers as input and sets the value to that
+`eooi` / "JoSH" takes integers as input and sets the value to that
 
-`eoic`/"JOsH" takes characters as input and sets the value to ascii number of char
+`eoic` / "JOsH" takes characters as input and sets the value to ascii number of char
 
-`eooo`/"jOsh" resets the value to 0
+`eooo` / "jOsh" resets the value to 0
 
-`eoxx`/"JOSh" squares the value
+`eoxx` / "JOSh" squares the value
 
-`exxx`/"jOSh" cubes the value
+`exxx` / "jOSh" cubes the value
 
-`eoop`/"JosH" outputs the current value (aka. print/echo)
+`eoop` / "JosH" outputs the current value (aka. print/echo)
 
-`eoom`/"joSH" moves one to the right on the tape reel of values (aka. memory)
+`eoom` / "joSH" moves one to the right on the tape reel of values (aka. memory)
 
-`eo-m`/"joSh" moves one to the left on the tape reel of values (aka. memory)
+`eo-m` / "joSh" moves one to the left on the tape reel of values (aka. memory)
 
-`eol1`/"JoSh" starts loop if the value is not 0, else jump to matching end loop tag
+`eol1` / "JoSh" starts loop if the value is not 0, else jump to matching end loop tag
 
-`eolo`/"jOsH" ends a loop
+`eolo` / "jOsH" ends a loop
 
 `(` starts notation space
 
@@ -75,7 +75,7 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 `> Hello, World!`
 ## Instructions
 1. If _execute_script.bat_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
-change it to "E-Script.py" (originally named _JoshScript.py_) - uses the relative file path
+change it to "E-Script.py" (originally named _JoshScript.py_) - uses the relative file path  
 of your downloaded folder.
 
 2. Open a text editor, write a program using E-Script codes above, then click "Save As".
