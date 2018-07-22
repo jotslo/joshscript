@@ -2,15 +2,15 @@
 A simple language that anyone can learn.
 
 - Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
-- Website download: http://www.joshl.io/downloads/joshscript.zip
 - Download from here: https://github.com/JoshSCF/JoshScript/archive/master.zip
+- Website download: http://www.joshl.io/downloads/joshscript.zip
 
-A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
+A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
 which was published as version 1.2. He also released the language-josh package on the atom text editor!  
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
 # What's new?
-JoshScript 1.2.3 has been released and contains a new josh, `jOSh` which cubes the value.
+JoshScript 1.2.3 has been released and contains a new code which cubes the value.
 
 **Release history - new in older versions:**  
 JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
