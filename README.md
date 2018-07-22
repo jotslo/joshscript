@@ -89,7 +89,6 @@ you would like that ends in _.jsh_, for example "program1.jsh".
 Your E-Script code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
 
-
 ## About this language
 In this section, there's some information about this language that could  
 help to answer questions about it, or the original version called *JoshScript*,  
