@@ -1,7 +1,7 @@
 # E-Script
 A simple language that anyone can learn.  
- \- with operations like low-level computer programming  
- and based on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript).
+ \- with operations like low-level computer programming and based on  
+ (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript), in my [branch](https://github.com/user-e/E-Script/tree/original-JoshScript).
 
 - Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
 - Download (from here): https://github.com/user-e/E-Script/archive/master-version.zip
