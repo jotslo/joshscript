@@ -11,7 +11,7 @@ which was published as version 1.2. He also released the language-josh package o
 This allows you to get your syntax highlighted when writing code in JoshScript.
 
 ## What's new?
-JoshScript 1.2.3 has been released and contains a new code which cubes the value.
+JoshScript 1.3 has been released and contains a new code which cubes the value.
 
 **Release history - new in older versions:**  
 JoshScript 1.2.2 release contained a few bug fixes and updated functions.  

@@ -256,5 +256,5 @@ def run_program():
         except:
             error("Unknown Error :(")
 
-print(end = "JoshScript 1.2.3\n> ")
+print(end = "JoshScript 1.3\n> ")
 run_program()
