@@ -1,46 +1,55 @@
 # JoshScript
-A language that everyone can learn.
+A simple language that anyone can learn.
 
-- Installation: https://www.youtube.com/watch?v=VGpngPR3lUc
-- Direct Download: http://www.joshl.io/downloads/joshscript.zip
+- Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
+- Download from here: https://github.com/JoshSCF/JoshScript/archive/master.zip
+- Website download: http://www.joshl.io/downloads/joshscript.zip
 
-A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code for me to publish as 1.2. He also released the language-josh package on the atom text editor! This allows you to get your syntax highlighted when writing code in JoshScript.
+A **huge** thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
+which was published as version 1.2. He also released the language-josh package on the atom text editor!  
+This allows you to get your syntax highlighted when writing code in JoshScript.
 
-# What's New?
-JoshScript 1.2.2 has been released and contains a few bug fixes and updated functions.
+# What's new?
+JoshScript 1.3 has been released and contains a new code which cubes the value.
 
-# Usage
-**JOSH** increases the value by 1
+**Release history - new in older versions:**  
+JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
+JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
-**josh** decreases the value by 1
+# Usage codes
+`JOSH` increases the value by 1
 
-**Josh** multiplies the value by 2
+`josh` decreases the value by 1
 
-**josH** divides the value by 2 and rounds down to the nearest integer
+`Josh` multiplies the value by 2
 
-**JOsh** outputs the ascii repr. of the current value
+`josH` divides the value by 2, rounding down to the nearest integer
 
-**JoSH** takes integers as input and sets the value to that
+`JOsh` outputs the ascii symbol with Unicode number equal to current value
 
-**JOsH** takes characters as input and sets the value to ascii repr. of char
+`JoSH` takes integers as input and sets the value to that
 
-**jOsh** sets the value to 0
+`JOsH` takes characters as input and sets the value to ascii number of char
 
-**JOSh** squares the value
+`jOsh` resets the value to 0
 
-**JosH** outputs the current value
+`JOSh` squares the value
 
-**joSH** moves one to the right on the tape reel
+`jOSh` cubes the value
 
-**joSh** moves one to the left on the tape reel
+`JosH` outputs the current value
 
-**JoSh** starts loop if the value is not 0, otherwise jump to matching jOsH tag
+`joSH` moves one to the right on the tape reel of values
 
-**jOsH** ends loop
+`joSh` moves one to the left on the tape reel of values
 
-**(** starts notation space
+`JoSh` starts loop if the value is not 0, else jump to matching end loop tag
 
-**)** ends notation space
+`jOsH` ends a loop
+
+`(` starts notation space
+
+`)` ends notation space
 
 # Examples
 ```
@@ -63,12 +72,16 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 ```
 `> Hello, World!`
 # Instructions
-1. Edit association.bat and change the path, D:\Documents\Dev\JoshScript\source\JoshScript.py,  to the location of JoshScript.py
+1. If _execute_script.bat_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
+change it to "JoshScript.py" (uses the relative file path of your downloaded folder).
 
-2. Open notepad, write a program in JoshScript and hit 'Save As'
+2. Open a text editor, write a program using JoshScript codes above, then click "Save As".
 
-3. Change the file type to 'All Files' and then name your program filename.jsh, filename being whatever name you would like to name your file
+3. Change the file type to "All Files" and name your program anything  
+you would like that ends in _.jsh_, for example "program1.jsh".
 
-4. When opening the notepad file, open the file with association.bat
+4. To run your program, open the text file with _execute_script.bat_.  
+(find it using your file manager's "choose another app" or "browse" option)
 
-Your JoshScript code should now run successfully. (Note that you must have Python 3.6 installed for this to work)
+Your JoshScript code should now run successfully.  
+(Note: you need Python 3.6 installed for this to work)
