@@ -3,7 +3,7 @@ A simple language that anyone can learn.
  \- with operations like low-level computer programming and based  
 on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript), in my [branch](https://github.com/user-e/E-Script/tree/original-JoshScript).
 
-- Installation guide: https://www.youtube.com/watch?v=VGpngPR3lUc
+- Installation guide (for JoshScript): https://www.youtube.com/watch?v=VGpngPR3lUc
 - Download (from here): https://github.com/user-e/E-Script/archive/master-version.zip
 
 A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
@@ -75,10 +75,11 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 `> Hello, World!`
 ## Instructions
 1. If _execute_script.bat_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
-change it to "E-Script.py" (originally named _JoshScript.py_) - uses the relative file path  
-of your downloaded folder.
+change it to "E-Script.py" (_original name "JoshScript.py",_ uses the relative file path  
+of your downloaded folder).
 
-2. Open a text editor, write a program using E-Script codes above, then click "Save As".
+2. Open a text editor, write a program using E-Script / JoshScript  
+codes above (ordered respectively with a "/"), then click "Save As".
 
 3. Change the file type to "All Files" and name your program anything  
 you would like that ends in _.jsh_, for example "program1.jsh".
@@ -86,10 +87,11 @@ you would like that ends in _.jsh_, for example "program1.jsh".
 4. To run your program, open the text file with _execute_script.bat_.  
 (find it using your file manager's "choose another app" or "browse" option)
 
-Your E-Script code should now run successfully.  
+Your E-Script (or JoshScript) code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
 
 ## About this language
 In this section, there's some information about this language that could  
 help to answer questions about it, or the original version called *JoshScript*,  
 for example *"why was it created?"* and *"what can it be used for?"*.
+ 
