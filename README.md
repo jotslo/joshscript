@@ -1,10 +1,12 @@
 # E-Script
 A simple language that anyone can learn.  
- \- with operations like low-level computer programming and based  
-on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript), in my [branch](https://github.com/user-e/E-Script/tree/original-JoshScript).
+ \- based on (a forked version of) the original idea, [JoshScript](https://github.com/JoshSCF/JoshScript),
+ in my [copy](https://github.com/user-e/E-Script/tree/original-JoshScript) of that branch.
 
-- Installation guide (for JoshScript): https://www.youtube.com/watch?v=VGpngPR3lUc
 - Download (from here): https://github.com/user-e/E-Script/archive/master-version.zip
+- JoshScript links:  
+  - [Installation guide](https://www.youtube.com/watch?v=VGpngPR3lUc)
+  - [Website download](http://www.joshl.io/downloads/joshscript.zip)
 
 A *huge* thanks to derns#5715 (https://github.com/upshaw) for completely rewriting the source code  
 which was published as version 1.2. He also released the language-josh package on the atom text editor!  
@@ -17,8 +19,9 @@ JoshScript 1.3 has been released and contains a new code which cubes the value.
 JoshScript 1.2.2 release contained a few bug fixes and updated functions.  
 JoshScript 1.2 included a new ability to loop! Examples and usage will be coming soon.
 
-## Operations for usage ("codes")
- \- uses 4 characters, each from a group of 2-8 ascii (basic latin) characters.  
+## Operations (codes for usage)
+ \- uses 4 characters, each from a group of 2-8 ascii (basic  
+latin) characters, a bit like low-level computer programming.  
 `eoo1` / "JOSH" increases the value by 1
 
 `eo-1` / "josh" decreases the value by 1
@@ -78,8 +81,8 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 change it to "E-Script.py" (_original name "JoshScript.py",_ uses the relative file path  
 of your downloaded folder).
 
-2. Open a text editor, write a program using E-Script / JoshScript  
-codes above (ordered respectively with a "/"), then click "Save As".
+2. Open a text editor, write a program using the codes  
+of E-Script / JoshScript (above) then click "Save As".
 
 3. Change the file type to "All Files" and name your program anything  
 you would like that ends in _.jsh_, for example "program1.jsh".
@@ -87,11 +90,10 @@ you would like that ends in _.jsh_, for example "program1.jsh".
 4. To run your program, open the text file with _execute_script.bat_.  
 (find it using your file manager's "choose another app" or "browse" option)
 
-Your E-Script (or JoshScript) code should now run successfully.  
+Your E-Script or JoshScript code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
 
 ## About this language
 In this section, there's some information about this language that could  
 help to answer questions about it, or the original version called *JoshScript*,  
 for example *"why was it created?"* and *"what can it be used for?"*.
- 
