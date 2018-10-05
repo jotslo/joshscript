@@ -1,8 +1,8 @@
 #!/bin/bash
-# exec_script.linux.sh / exec_script.mac.command : converted to a bash (shell) script
-# from the file "execute_script.bat" for use on the (GNU/)Linux OS or Mac OS, if this
-# file has "mac" in its name (to update that file, copy the one for Linux into it
-# then edit it for Mac OS using <https://stackoverflow.com/a/52651033/3787376>).
+# exec_script.linux.sh / exec_script.mac.command : converted to a bash (shell) script from
+# the file "execute_script.bat", for (Microsoft) Windows, to be used on the (GNU/)Linux OS
+# or MacOS, if this file has "mac" in its name (to update that file, copy the one for Linux
+# into it then edit it for MacOS using <https://stackoverflow.com/a/52651033/3787376>).
 
 # @echo off
 
