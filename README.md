@@ -72,7 +72,7 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 ```
 `> Hello, World!`
 # Instructions
-1. If _execute_script.bat_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
+1. If _execute_script.bat\*_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
 change it to "JoshScript.py" (uses the relative file path of your downloaded folder).
 
 2. Open a text editor, write a program using JoshScript codes above, then click "Save As".
@@ -80,8 +80,13 @@ change it to "JoshScript.py" (uses the relative file path of your downloaded fol
 3. Change the file type to "All Files" and name your program anything  
 you would like that ends in _.jsh_, for example "program1.jsh".
 
-4. To run your program, open the text file with _execute_script.bat_.  
+4. To run your program, open the text file with _execute_script.bat\*_.  
 (find it using your file manager's "choose another app" or "browse" option)
+
+_\*_ the file _execute_script.bat_, for (Microsoft) Windows, or one of  
+the following files to be used on other operating system(OS)s:  
+ \- _exec_script.linux.sh_, a bash shell script for (GNU/)Linux.  
+ \- _exec_script.mac.command_, a bash script for MacOS.
 
 Your JoshScript code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
