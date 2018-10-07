@@ -75,13 +75,22 @@ JOSHJoshJoshJoshJoshJoshJoshJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOSHJOshjoshjoshjoshjosh
 1. If _execute_script.bat\*_ has the text "D:\Documents\Dev\JoshScript\source\JoshScript.py",  
 change it to "JoshScript.py" (uses the relative file path of your downloaded folder).
 
-2. Open a text editor, write a program using JoshScript codes above, then click "Save As".
+2. If you would like to use an _execute_script.bat\*_ for (GNU/)Linux or one that  
+has "mac"/"linux" in its name and are going to run it from the command line,  
+you need to add executable rights (change mode bits) - using this command,  
+in a _terminal_ (command line) app opened in the folder that has the file:  
+```
+chmod +rx exec_script.linux.sh
+#or:# chmod +rx exec_script.mac.command
+```
 
-3. Change the file type to "All Files" and name your program anything  
-you would like that ends in _.jsh_, for example "program1.jsh".
+3. Open a text editor, write a program using JoshScript codes above, then click "Save As".
 
-4. To run your program, open the text file with _execute_script.bat\*_.  
-(find it using your file manager's "choose another app" or "browse" option)
+4. Change the file type to "All Files", if the dialog window has this option, name your  
+program anything you like that ends in _.jsh_ (for example "program1.jsh") and save it.
+
+5. To run your program, open the text file with _execute_script.bat\*_ - find it  
+using your file manager's "choose another app" or "browse" option.
 
 _\*_ the file _execute_script.bat_, for (Microsoft) Windows, or one of  
 the following files to be used on other operating system(OS)s:  
