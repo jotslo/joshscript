@@ -24,7 +24,7 @@ export WTITLE="JoshScript 1.3.0"
 # :: py D:\Documents\Dev\JoshScript\source\JoshScript.py %*
 # py JoshScript.py %*
 
-if [ -e $1 ]
+if [ -e "$1" ]
 then
     python3 JoshScript.py "$1"
     # - from <https://stackoverflow.com/a/3534315/3787376>.
