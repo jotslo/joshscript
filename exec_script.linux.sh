@@ -23,7 +23,15 @@ export WTITLE="JoshScript 1.3.0"
 # :: the next line to one after in non-Github version of this file.
 # :: py D:\Documents\Dev\JoshScript\source\JoshScript.py %*
 # py JoshScript.py %*
-python3 JoshScript.py "$1"
-# - from <https://stackoverflow.com/a/3534315/3787376>.
+
+if [ -e $1 ]
+then
+    python3 JoshScript.py "$1"
+    # - from <https://stackoverflow.com/a/3534315/3787376>.
+else
+    python3 JoshScript.py
+fi
+# Use input for script if filename argument is not a file.
+# - based on <https://stackoverflow.com/a/40082454/3787376>.
 
 # pause>nul
