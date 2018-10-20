@@ -23,6 +23,7 @@ export WTITLE="JoshScript 1.3.0"
 # :: the next line to one after in non-Github version of this file.
 # :: py D:\Documents\Dev\JoshScript\source\JoshScript.py %*
 # py JoshScript.py %*
-python3 JoshScript.py #[to-do: add something here for Unix input args (a filename)]
+python3 JoshScript.py "$1"
+# - from <https://stackoverflow.com/a/3534315/3787376>.
 
 # pause>nul
