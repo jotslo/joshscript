@@ -24,7 +24,7 @@ JoshScript 1.2 included a new ability to loop! Examples and usage will be coming
 `Josh` multiplies the value by 2
 
 `josH` divides the value by 2, rounding down to the nearest integer
- 
+
 `JOsh` outputs the ascii symbol with Unicode number equal to current value
 
 `JoSH` takes integers as input and sets the value to that
