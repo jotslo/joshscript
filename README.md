@@ -106,5 +106,17 @@ In this section, there's some information about this language that could help
 to answer questions about the original version called *JoshScript*, or E-Script,  
 for example *"why was it created?"* and *"what can it be used for?"*.
 
+**• Why and when created**
+
 The *JoshScript* scripting / programming language appeared (in GitHub)  
-on 23 August 2017 and the E-Script version was created in December 2017.
+on 23 August 2017 and the E-Script version was created in December 2017.  
+E-Script was made as an experiment idea, a simple language, for fun.  
+Both languages were made with the thought that "anyone can learn" them.
+
+**• What use, links to low-level programming**
+
+The languages have many "Usage codes" / "Operations (codes for usage)"  
+that can be used for anything, mainly math(ematic)s calculations.
+
+They are a bit like low-level computer programming and a [Turing machine](https://en.wikipedia.org/wiki/Turing_machine).  
+\[to-do: add more here]
