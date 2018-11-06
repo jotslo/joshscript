@@ -100,3 +100,11 @@ of the following to be used on other operating system(OS)s:
 
 Your JoshScript code should now run successfully.  
 (Note: you need Python 3.6 installed for this to work)
+
+## About this language
+In this section, there's some information about this language that could help  
+to answer questions about the original version called *JoshScript*, or E-Script,  
+for example *"why was it created?"* and *"what can it be used for?"*.
+
+The *JoshScript* scripting / programming language appeared (in GitHub)  
+on 23 August 2017 and the E-Script version was created in December 2017.
